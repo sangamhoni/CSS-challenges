@@ -124,3 +124,32 @@ button:hover{
 .bt-right ul li{
     align-items: start;
 }
+
+
+/* making it responsive */
+@media screen and (max-width:576px) {
+
+    .container{
+        width: auto;
+        height: auto;
+        margin: 20px;
+        transform: translate(0, 0);
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+    
+    .bt-left, .bt-right{
+        width: auto;
+    }
+}
+
+/* 
+@media
+    only screen
+    and (min-width: 600px)
+    and (max-width:756px) {
+
+
+*/
