@@ -1,0 +1,126 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(217, 245, 243);
+    font-size: 12px;
+
+    color: hsl(179, 62%, 43%);
+    color:hsl(71, 73%, 54%);
+    color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+}
+
+.container{
+    width: 500px;
+    height: 350px;
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px 11px rgba(0,0,0,0.24);
+    margin-top: 50vh;
+    margin-left: 50vw;
+    transform: translate(-50%,-50%);
+    
+}
+
+h1, h3{
+    margin: 0;
+} 
+
+p{
+    margin: 0.5rem 0;
+}
+
+.top, .bt-left, .bt-right{
+    padding: 25px;
+}
+
+.top{
+    background-color: white;
+    height: 45%;
+
+}
+
+.top h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.top h3{
+    color:hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+}
+
+.top p{
+    color: hsl(218, 22%, 67%);
+    line-height: 0.6rem;
+}
+
+.bottom{
+    display: flex;
+    color: hsl(204, 43%, 93%);
+}
+
+.bottom h3{
+    margin-bottom: 15px;
+}
+
+.bt-left{
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+}
+
+.price{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.price .amount{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.price .frequency{
+    color: hsl(217, 40%, 80%);
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 0.8rem;
+    background-color:hsl(71, 73%, 54%);
+    border: none;    
+    border-radius: 0.2rem;
+    color: hsl(204, 43%, 93%);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #a9c42d;
+    transform: scale(1.05);
+    transition: ease-in 0.1s;
+}
+
+.bt-right{
+    background-color: rgb(66, 201, 186);
+    width: 50%;
+}
+
+.bt-right ul{
+    list-style: none;
+    padding: 0;
+    opacity: 0.8;
+}
+
+.bt-right ul li{
+    align-items: start;
+}
