@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&family=Playfair+Display&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.testimonial-container {
+    padding: 10% 0%;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 7px 7px 34px -17px rgba(0, 0, 0, 0.63);
+}
+
+.profile {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    z-index: 99;
+}
+
+.testimonial-container .profile .intro .role {
+    font-weight: 400;
+    opacity: 50%;
+}
+
+.testimonial-container .profile img {
+    border-radius: 50%;
+    border: 2px solid hsl(210, 46%, 95%);
+    width: 40px;
+}
+
+.testimonial-container .profile .intro {
+    line-height: 1.2rem;
+}
+
+.testimonial-container .testimonial h3 {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 99;
+}
+
+.testimonial-container .testimonial .review {
+    opacity: 50%;
+    font-weight: 400;
+}
+
+#testimonial-1 {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    position: relative;
+    z-index: 0;
+}
+
+#testimonial-1 #quote {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    z-index: 1;
+}
+
+
+#testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+#testimonial-3 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#testimonial-4 {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+
+#testimonial-5 {
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 763px) {
+    .testimonial-container {
+      padding: 6% 16%;
+      display: flex;
+    }
+
+    .testimonial {
+      margin: 10px;
+    }
+
+    .testimonial-container .container-left {
+      flex-basis: 75%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .testimonial-container .container-right {
+      flex-basis: 25%;
+      display: flex;
+    }
+
+    .sub-container-top {
+      display: flex;
+      flex-basis: 50%;
+    }
+
+    .sub-container-bottom {
+      display: flex;
+      flex-basis: 50%;
+    }
+    /* .testimonial:nth-child(1),
+      .testimonial:nth-child(2),
+      .testimonial:nth-child(3),
+      .testimonial:nth-child(4) {
+            height: 50vh; */
+}
